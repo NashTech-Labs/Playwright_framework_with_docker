@@ -1,0 +1,21 @@
+{
+  "name": "playwright-docker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+"test": "playwright test --browser=all",
+  "test-html-report": "playwright test --browser=all --reporter=html",
+  "test-json-report": "PLAYWRIGHT_JSON_OUTPUT_NAME=results.json playwright test --browser=chromium --reporter=json"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.31.2",
+    "@types/node": "^18.15.5",
+    "install": "^0.13.0",
+    "playwright": "^1.31.2",
+    "toml": "^3.0.0",
+    "typescriptnpm": "^1.0.1"
+  }
+}
